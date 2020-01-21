@@ -1,8 +1,9 @@
-//const path = require('path');
 module.exports = {
     mode: 'development',
-    entry: ['./utils.js','./app.js'],
+    entry: './app.js',
     output: {
+        path: __dirname,
+        publicPath: '/',
         filename: 'bundle.js'
     },
     watch: true,
