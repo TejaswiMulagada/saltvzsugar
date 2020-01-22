@@ -6,14 +6,13 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
     "start": "node server.js",
-    "heroku-postbuild": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "heroku-run-build-script": true,
   "keywords": [],
   "author": "Teju Mulagada",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "babel-core": "^6.26.3",
