@@ -7,7 +7,9 @@ module.exports = {
         filename: 'bundle.js'
     },
     watch: true,
-
+    devServer: {
+        watchContentBase: true,
+    },
     module: {
         rules: [
             {
@@ -23,7 +25,11 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader',
-            }
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
         ]
     },
     resolve: {
