@@ -8,13 +8,11 @@
 
 /*
 * asyc http request returns a promise
-* all the instagram data used in the functions will be 
+* all the instagram data used in the functions should be moved
 */
 let dataIds = [];
 var apikey = process.env.INSTAGRAM_ACCESSTOKEN;
-console.log(apikey, process.env.PORT);
 const mediaUrl = "https://graph.instagram.com/v1.0/17841411489686777/media?access_token=" + apikey;
-console.log(mediaUrl);
 fetch(mediaUrl, { cache: "reload" })
     .then((response) => response.json())
     .then(function (results) {
