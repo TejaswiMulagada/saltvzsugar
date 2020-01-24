@@ -42,7 +42,7 @@ fetch(mediaUrl, { cache: "reload" })
 function getImgData(u) {
     let dataUrl;
     u.forEach(i => {
-        dataUrl = "https://graph.instagram.com/" + i + "?fields=id,thumbnail_url,permalink,media_type,media_url,username,timestamp&access_token=IGQVJXaDBvdGxORDFlYk9xbHdqMDZAtaVdqUGhsRlFTUkxoWllRSU04ZAUJDLXRsUkM3aXlidFM0ZAU9hZA0JKQ3ZA1WjFqcWRxXzVYeWxnNWFsLU93a0xqUC1ZAUXp5WVRRMEhPM2kyeHdR";
+        dataUrl = "https://graph.instagram.com/" + i + "?fields=id,thumbnail_url,permalink,media_type,media_url,username,timestamp&access_token="+apikey;
         fetch(dataUrl)
             .then((response) => response.json())
             .then(d => {
