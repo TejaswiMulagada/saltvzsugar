@@ -21,7 +21,7 @@
     "eslint-loader": "^3.0.3",
     "node-libs-browser": "^2.2.1",
     "webpack": "^4.41.5",
-    "webpack-cli": "3.3.10",
+    "webpack-cli": "3.3.12",
     "express": "^4.17.1",
     "path": "0.12.7",
     "css-loader": "3.4.2",
