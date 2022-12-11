@@ -22,7 +22,7 @@
     "node-libs-browser": "^2.2.1",
     "webpack": "^4.41.5",
     "webpack-cli": "3.3.10",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "path": "0.12.7",
     "css-loader": "3.4.2",
     "style-loader": "1.1.3"
